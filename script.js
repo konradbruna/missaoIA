@@ -114,6 +114,11 @@ function respostaSelecionada(opcaoSelecionada){
     mostraPergunta();
 }
 
+function aleatorio(lista){
+    const posicao = math.random(math.random() *lista.length);
+    return lista[posicao];
+}
+
 function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
